@@ -1,0 +1,35 @@
+:root {
+  --col-light-blue: #5300C8;
+  --col-dark-blue: #03318C;
+  --col-whihe: #FFFFFF;
+  --col-whihe: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 96px;
+  background-color: var(--col-light-blue);
+}
+
+.header__logo {
+  width: 370px;
+}

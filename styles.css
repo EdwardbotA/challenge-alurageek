@@ -145,6 +145,7 @@ main {
   width: 95%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 40px 20px;
 }
 
@@ -153,7 +154,6 @@ main {
   width: 196px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   background-color: var(--col-light-blue);
   border-radius: 10px;
   padding: 10px;
@@ -214,4 +214,43 @@ footer {
 .company__info {
   color: var(--col-whihe);
   font-size: 1.4rem;
+}
+
+@media (min-width: 1024px) {
+  main {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .add-product__section {
+    margin-top: 30px;
+    width: 30%;
+  }
+
+  .button__container {
+    margin-bottom: 20px;
+  }
+
+  .list-products__section {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .list-products__title {
+    margin-top: 30px;
+  }
+  
+  .products__container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    gap: 30px 16px;
+    /* height: 550px; */
+    max-height: 550px;
+    min-height: min-content;
+    padding-bottom: 20px;
+    /* scrollbar-width: ; */
+    scroll-behavior: smooth;
+    scrollbar-color: var(--col-light-blue) var(--col-whihe);
+  }
 }

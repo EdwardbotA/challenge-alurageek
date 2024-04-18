@@ -9,6 +9,32 @@
   <body>
     <header class="header">
       <img class="header__logo" src="./assets/logo.png" alt="Logo aluraGeek">
+      <div class="header__shadow"></div>
     </header>
+
+    <main>
+      <section class="add-product__section">
+        <h1 class="add-product__title">Agregar<br>Producto:</h1>
+
+        <form class="form__container">
+            <input class="form__input" type="text" placeholder="nombre..." required>
+            <input class="form__input" type="number" placeholder="precio..." required>
+            <input class="form__input" type="text" placeholder="imagen..." required>
+
+            <div class="button__container">
+              <button class="button button__send">Enviar</button>
+              <button class="button button__clear">limpiar</button>
+            </div>
+        </form>
+      </section>
+
+      <section class="list-products__section"></section>
+    </main>
+
+    <footer>
+      <img class="header__logo" src="./assets/logo.png" alt="Logo aluraGeek">
+      <p>Desarrollado por Edward</p>
+      <span>Alura Latam 2024</span>
+    </footer>
   </body>
 </html>

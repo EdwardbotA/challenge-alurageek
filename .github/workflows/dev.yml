@@ -1,0 +1,34 @@
+name: Desplegar proyecto en Github Pages
+
+on:
+  push:
+    tags:
+      - 'dev_*'
+
+permissions: write-all
+
+jobs:
+  build:
+    environment: dev
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: seleccionar al version de nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias y construir el dist
+        working-directory: ./
+        run: |
+          npm install
+          npm run serve
+
+      - name: Desplegar en GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: /

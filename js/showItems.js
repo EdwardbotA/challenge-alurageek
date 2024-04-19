@@ -23,7 +23,7 @@ function crearCard(name, price, url, id) {
   return card;
 }
 
-async function showItems() {
+export default async function showItems() {
   try {
     const itemAPI = await conexionAPI.itemsList();
 
@@ -33,8 +33,8 @@ async function showItems() {
       );
     });
   } catch (error) {
-    itemsContainer.innerHTML = `<h2 class="mensaje__titulo">Ha ocurrido un problema con la conexion :( </h2>`
+    itemsContainer.innerHTML = `<h2 class="mensaje__titulo">Ha ocurrido un problema con la conexion :( </h2>`;
   }
 }
 
-showItems()
+showItems();

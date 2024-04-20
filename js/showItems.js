@@ -25,6 +25,7 @@ function crearCard(name, price, url, id) {
 
 export default async function showItems() {
   try {
+    itemsContainer.innerHTML = ''
     const itemAPI = await conexionAPI.itemsList();
 
     itemAPI.forEach((item) => {

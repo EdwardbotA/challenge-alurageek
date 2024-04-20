@@ -1,4 +1,5 @@
 import { conexionAPI } from "./conexionAPI.js";
+import showItems from "./showItems.js";
 
 const listOfItems = document.querySelector('[data-list]')
 
@@ -10,5 +11,6 @@ listOfItems.addEventListener('click', async (e) => {
   if (e.target.nodeName === 'IMG' && e.target.dataset.remove) {
     // console.log('hola');
     await conexionAPI.deleteItem(itemId)
+    showItems()
   }
 })

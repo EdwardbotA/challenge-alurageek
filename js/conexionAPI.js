@@ -30,7 +30,21 @@ async function sendItem(name, price, id, url) {
   return convertConnection;
 }
 
+async function deleteItem(id) {
+  const connection = await fetch(`${ApiURL}/${id}`, {
+    method: "DELETE",
+  });
+  const convertConnection = connection.json();
+
+  if (!connection.ok) {
+    throw new Error("No se ha podido eliminar el producto");
+  }
+  
+  return convertConnection;
+}
+
 export const conexionAPI = {
   itemsList,
   sendItem,
+  deleteItem,
 };

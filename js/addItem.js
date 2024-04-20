@@ -1,5 +1,6 @@
 import { conexionAPI } from "./conexionAPI.js";
 import showItems from "./showItems.js";
+import cleanInputs from "./cleanInputs.js";
 
 const form = document.querySelector("[data-form]");
 
@@ -13,6 +14,7 @@ async function addItem(e) {
 
   try {
     await conexionAPI.sendItem(itemName, itemPrice, itemId, itemImage);
+    cleanInputs()
     showItems();
   } catch (error) {
     alert(error);

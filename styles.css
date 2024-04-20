@@ -164,7 +164,7 @@ main {
 
 .product__img {
   height: 174px;
-  object-fit: cover;
+  object-fit: contain;
   border: 3px solid var(--col-black);
   border-radius: 5px;
 }

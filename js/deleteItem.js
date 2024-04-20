@@ -6,7 +6,7 @@ const listOfItems = document.querySelector('[data-list]')
 listOfItems.addEventListener('click', async (e) => {
   e.preventDefault()
 
-  const itemId = e.target.parentElement.parentElement.parentElement.dataset.id
+  const itemId = e.target.dataset.id
   
   if (e.target.nodeName === 'IMG' && e.target.dataset.remove) {
     // console.log('hola');

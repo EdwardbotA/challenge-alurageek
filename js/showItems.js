@@ -5,7 +5,6 @@ const itemsContainer = document.querySelector("[data-list]");
 function crearCard(name, price, url, id) {
   const card = document.createElement("div");
   card.classList.add("product__card");
-  card.dataset.id = id;
 
   card.innerHTML = `<img
     class="product__img"
@@ -16,7 +15,7 @@ function crearCard(name, price, url, id) {
     <p>${name}</p>
     <div class="card-container--value">
       <p>$${price}</p>
-      <img src="./assets/trash.svg" data-remove="true"/>
+      <img src="./assets/trash.svg" data-remove="true" data-id="${id}"/>
     </div>
   </div>`;
 

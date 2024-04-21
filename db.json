@@ -5,6 +5,18 @@
       "name": "Pikachu",
       "price": "60",
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKWuyVLfdIQSZRv5odzlUNxdpytGOvuUgdIJwouA7l-Q&s"
+    },
+    {
+      "id": "0abb2596-a000-4424-9dc1-68074c128dc4",
+      "name": "poligon",
+      "price": "70",
+      "image_url": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/137.png"
+    },
+    {
+      "id": "6e90326d-e4da-4c3f-9126-dd22a5686403",
+      "name": "charizard",
+      "price": "90",
+      "image_url": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006_f2.png"
     }
   ]
 }

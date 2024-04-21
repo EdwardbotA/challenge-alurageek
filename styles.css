@@ -216,6 +216,12 @@ footer {
   font-size: 1.4rem;
 }
 
+.mensaje__titulo {
+  color: var(--col-dark-blue);
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
 @media (min-width: 1024px) {
   main {
     flex-direction: row-reverse;

@@ -19,23 +19,29 @@
 
         <form class="form__container" data-form>
           <input
+            name="nombre"
             class="form__input"
             type="text"
             placeholder="nombre..."
+            minlength="3"
             required
             data-name
           />
           <input
+            name="precio"
             class="form__input"
             type="number"
             placeholder="precio..."
+            min="1"
             required
             data-price
           />
           <input
+            name="url_imagen"
             class="form__input"
-            type="text"
-            placeholder="imagen..."
+            type="url"
+            placeholder="URL de la imagen..."
+            pattern="https?://.*\.(png|jpg|webp|jpeg)"
             required
             data-url
           />
@@ -60,6 +66,7 @@
       <span class="company__info">Alura Latam 2024</span>
     </footer>
 
+    <script src="./js/validation.js" type="module"></script>
     <script src="./js/showItems.js" type="module"></script>
     <script src="./js/addItem.js" type="module"></script>
     <script src="./js/deleteItem.js" type="module"></script>

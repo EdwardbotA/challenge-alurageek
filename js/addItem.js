@@ -14,7 +14,7 @@ async function addItem(e) {
 
   try {
     await conexionAPI.sendItem(itemName, itemPrice, itemId, itemImage);
-    cleanInputs()
+    cleanInputs();
     showItems();
   } catch (error) {
     alert(error);

@@ -1,7 +1,8 @@
 :root {
-  --col-light-blue: #5300C8;
-  --col-dark-blue: #03318C;
-  --col-whihe: #FFFFFF;
+  --col-light-blue: #5300c8;
+  --col-dark-blue: #03318c;
+  --col-purple: #8C0375;
+  --col-whihe: #ffffff;
   --col-black: #000000;
 }
 
@@ -19,7 +20,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   line-height: 1;
 }
 
@@ -96,7 +97,7 @@ main {
   letter-spacing: 4px;
 }
 
-.button__container{
+.button__container {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -108,7 +109,7 @@ main {
   height: 55px;
   border: 3px solid var(--col-dark-blue);
   font-size: 2rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
   border-radius: 16px;
 }
@@ -194,6 +195,12 @@ main {
   color: var(--col-whihe);
 }
 
+.trash_icon:hover {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(13%) sepia(38%) saturate(7147%) hue-rotate(297deg) brightness(97%) contrast(111%);
+  transform: scale(1.2);
+}
+
 /* footer */
 footer {
   width: 100%;
@@ -242,20 +249,18 @@ footer {
     width: 60%;
     margin-bottom: 20px;
   }
-  
+
   .list-products__title {
     margin-top: 30px;
   }
-  
+
   .products__container {
     overflow-x: hidden;
     overflow-y: auto;
     gap: 30px 16px;
-    /* height: 550px; */
     max-height: 550px;
     min-height: min-content;
     padding-bottom: 20px;
-    /* scrollbar-width: ; */
     scroll-behavior: smooth;
     scrollbar-color: var(--col-light-blue) var(--col-whihe);
   }

@@ -17,6 +17,12 @@
       "name": "charizard",
       "price": "9000",
       "image_url": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006_f2.png"
+    },
+    {
+      "id": "d65ff3dc-9e97-4564-b37b-076c491ae392",
+      "name": "dwd",
+      "price": "80",
+      "image_url": "https://static.wikia.nocookie.net/espokemon/images/a/a7/Lugia.png"
     }
   ]
 }

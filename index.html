@@ -18,36 +18,45 @@
         <h1 class="add-product__title">Agregar<br />Producto:</h1>
 
         <form class="form__container" data-form>
-          <input
-            name="nombre"
-            class="form__input"
-            type="text"
-            placeholder="nombre..."
-            minlength="3"
-            required
-            data-name
-          />
-          <input
-            name="precio"
-            class="form__input"
-            type="number"
-            placeholder="precio..."
-            min="1"
-            required
-            data-price
-          />
-          <input
-            name="url_imagen"
-            class="form__input"
-            type="url"
-            placeholder="URL de la imagen..."
-            pattern="https?://.*\.(png|jpg|webp|jpeg)"
-            required
-            data-url
-          />
+          <fieldset class="form__field">
+            <input
+              name="nombre"
+              class="form__input"
+              type="text"
+              placeholder="nombre..."
+              minlength="3"
+              required
+              data-name
+            />
+            <span class="mensaje-error"></span>
+          </fieldset>
+          <fieldset class="form__field">
+            <input
+              name="precio"
+              class="form__input"
+              type="number"
+              placeholder="precio..."
+              min="1"
+              required
+              data-price
+            />
+            <span class="mensaje-error"></span>
+          </fieldset>
+          <fieldset class="form__field">
+            <input
+              name="url_imagen"
+              class="form__input"
+              type="url"
+              placeholder="URL de la imagen..."
+              pattern="https?://.*\.(png|jpg|webp|jpeg)"
+              required
+              data-url
+            />
+            <span class="mensaje-error"></span>
+          </fieldset>
 
           <div class="button__container">
-            <button class="button button__send" type="submit">Enviar</button>
+            <button class="button button__send" type="submit" disabled>Enviar</button>
             <button class="button button__clear" type="button">limpiar</button>
           </div>
         </form>
@@ -66,7 +75,7 @@
       <span class="company__info">Alura Latam 2024</span>
     </footer>
 
-    <script src="./js/validation.js" type="module"></script>
+    <script src="./js/displayError.js" type="module"></script>
     <script src="./js/showItems.js" type="module"></script>
     <script src="./js/addItem.js" type="module"></script>
     <script src="./js/deleteItem.js" type="module"></script>

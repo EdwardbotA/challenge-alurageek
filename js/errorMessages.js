@@ -4,6 +4,7 @@ export const typeError = [
   "patternMismatch",
   "tooShort",
   "stepMismatch",
+  'rangeUnderflow'
 ];
 
 export const messages = {
@@ -14,10 +15,10 @@ export const messages = {
   precio: {
     valueMissing: "El campo precio no puede esta vacio",
     stepMismatch: "no se aceptan numeros decimales",
+    rangeUnderflow: "El precio no puede ser 0"
   },
   url_imagen: {
     valueMissing: "El campo URL no puede esta vacio",
-    typeMismatch: "Por favor, ingresa una URL valida",
-    patternMismatch: "La URL no tiene un formato de imagen valido (jpg, png, webp o jpeg)",
+    patternMismatch: "Por favor, ingresa una URL valida y que termine en un formato de imagen valido (jpg, png, webp o jpeg)",
   },
 };

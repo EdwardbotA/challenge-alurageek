@@ -77,7 +77,15 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 8px;
+  text-align: center;
 }
 
 .form__input {
@@ -117,6 +125,10 @@ main {
 .button__send {
   background-color: var(--col-dark-blue);
   color: var(--col-whihe);
+}
+
+.button__send:disabled {
+  background-color: gray;
 }
 
 .button__clear {
@@ -226,6 +238,12 @@ footer {
 .mensaje__titulo {
   color: var(--col-dark-blue);
   font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.mensaje-error {
+  color: var(--col-purple);
+  font-size: 1.5rem;
   font-weight: bold;
 }
 

@@ -46,7 +46,7 @@ Es una aplicación para la practica del uso de JavaScript, HTML y CSS con el uso
 
 - `Funcionalidad 1a`: Ejecuta una verificación de los campos para que puedas ver los productos correctamente una vez renderizados.
 
-![verificacion de formulario](https://github.com/EdwardbotA/challenge-alurageek/blob/main/assets/form-verification.png?raw=true)
+![verificacion de formulario](https://github.com/EdwardbotA/challenge-alurageek/blob/main/assets/form-veriftication.png?raw=true)
 
 - `Funcionalidad 2`: Renderiza los productos enviados con los datos enviado desde el formulario trayéndolos desde el server local.
 
@@ -54,7 +54,7 @@ Es una aplicación para la practica del uso de JavaScript, HTML y CSS con el uso
 
 - `Funcionalidad 3`: Te permite eliminar cualquier productos con hacer click en la caneca de basura.
 
-![eliminar productos](https://github.com/EdwardbotA/challenge-alurageek/blob/main/assets/render.png?raw=true)
+![eliminar productos](https://github.com/EdwardbotA/challenge-alurageek/blob/main/assets/delete.png?raw=true)
 
 ## 📋 Acceso al proyecto
 

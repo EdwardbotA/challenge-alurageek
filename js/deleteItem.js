@@ -9,7 +9,7 @@ listOfItems.addEventListener('click', async (e) => {
   const itemId = e.target.dataset.id
   
   if (e.target.nodeName === 'IMG' && e.target.dataset.remove) {
-    await conexionAPI.deleteItem(itemId)
+    let itemDeleted = await conexionAPI.deleteItem(itemId)
     showItems()
   }
 })

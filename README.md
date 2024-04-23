@@ -7,6 +7,8 @@
 <img src="https://img.shields.io/badge/STATUS-TERMINADO-purple?style=for-the-badge&logo=github&logoColor=red">
 </p>
 
+Pagina desplegada: [Pagina desplegada aqui](https://edwardbota.github.io/challenge-alurageek/)
+
 ## Índice
 
 * [Título e imagen de portada](#Título-e-imagen-de-portada)

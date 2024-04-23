@@ -281,5 +281,11 @@ footer {
     padding-bottom: 20px;
     scroll-behavior: smooth;
     scrollbar-color: var(--col-light-blue) var(--col-whihe);
+    margin-bottom: 200px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
   }
 }

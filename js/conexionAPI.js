@@ -1,4 +1,4 @@
-const ApiURL = "https://github.com/EdwardbotA/challenge-alurageek/blob/main/db.json";
+const ApiURL = "http://localhost:3001/items";
 
 async function itemsList() {
   const connection = await fetch(ApiURL);
